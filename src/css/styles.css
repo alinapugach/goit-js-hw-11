@@ -21,3 +21,77 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input {
+  width: 272px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.btn {
+  width: 91px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(78, 117, 255);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: rgb(108, 140, 255);
+}
+
+.input:hover {
+  border-color: rgb(0, 0, 0);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 360px;
+  height: 144px;
+  object-fit: cover;
+}
+
+.info {
+  color: rgb(46, 47, 66);
+  font-size: 12px;
+  display: flex;
+  max-width: 360px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 25px;
+  gap: 32px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.bold-word {
+  font-weight: 600;
+}
+
+.loader {
+  display: none;
+}
