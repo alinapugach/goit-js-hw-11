@@ -18,6 +18,7 @@ input.addEventListener('input', function () {
 
 form.addEventListener('submit', event => {
   event.preventDefault();
+  gallery.innerHTML = '';
   loader.style.display = 'block';
   imagesAPI.getImages(inputValue).then(response => {
     loader.style.display = 'none';
